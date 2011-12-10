@@ -1,0 +1,11 @@
+# For emacs:
+*~
+\#*
+.\#*
+
+# For vim:
+*.swp
+
+# For notetaking file
+worksheet.txt
+
