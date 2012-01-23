@@ -18,6 +18,6 @@ Simple, robust and handy pomodoro timer for linux.
 
   * Server will open network socket
   * client will connect
-  * some simple text protocol
+  * client and server will use JSON for exchanging commands/data
   * server always should send confirmation and status, like: OK or Fail
 
