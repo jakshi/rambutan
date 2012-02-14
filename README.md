@@ -11,8 +11,8 @@ Simple, robust and handy pomodoro timer for linux.
 
   * server: pomod
   * CLI server console: pomocli
-  * CLI/ncurces client
-  * QT client
+  * CLI/ncurces client: pomonc
+  * QT client: qpomo
 
 # Server/client interconnection
 
