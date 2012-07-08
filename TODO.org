@@ -1,6 +1,7 @@
 * Stuff to do:
-** TODO Add license information
-** TODO Copy socket client/server ruby examples from travel notebook
+** DONE Add license information
+** DONE Copy socket client/server ruby examples from travel notebook
+** TODO Create dull server/client that can exchange messages.
 ** TODO Register domain for this project
 ** TODO Create bug tracker for this project
 * Done
