@@ -1,0 +1,6 @@
+* Stuff to do:
+** TODO Add license information
+** TODO Copy socket client/server ruby examples from travel notebook
+** TODO Register domain for this project
+** TODO Create bug tracker for this project
+* Done
