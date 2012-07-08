@@ -25,3 +25,4 @@ Simple, robust and handy pomodoro timer for linux.
 
   * Ruby
     * cri - library for building easy-to-use commandline tools.
+    * json - http://json.rubyforge.org/ library for json in Ruby
