@@ -11,8 +11,8 @@ Simple, robust and handy pomodoro timer for linux.
 
   * server: pomod
   * CLI server console: pomocli
-  * CLI/ncurces client: pomonc
-  * QT client: qpomo
+  * CLI/ncurces client
+  * QT client
 
 # Server/client interconnection
 
@@ -21,3 +21,8 @@ Simple, robust and handy pomodoro timer for linux.
   * client and server will use JSON for exchanging commands/data
   * server always should send confirmation and status, like: OK or Fail
 
+# Useful libraries
+
+  * Ruby
+    * cri - library for building easy-to-use commandline tools.
+    * json - http://json.rubyforge.org/ library for json in Ruby
