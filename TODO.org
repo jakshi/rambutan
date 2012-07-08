@@ -1,0 +1,13 @@
+* Raw ideas
+** I want to use tcp/ip network to exchange information between client and server.
+** I want tabbed qt interface
+** I need storage for about 50000 pomodoros, may be sqlite?
+** I want hooks, after, before pom/short break/long break starts/ends
+** I want some ruby library to handle cli interface.
+* Stuff to do:
+** DONE Add license information
+** DONE Copy socket client/server ruby examples from travel notebook
+** TODO Create dull server/client that can exchange messages.
+** TODO Register domain for this project
+** TODO Create bug tracker for this project
+* Done
