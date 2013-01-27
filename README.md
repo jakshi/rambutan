@@ -1,28 +1,7 @@
-# Goal
+# Introduction
 
-Simple, robust and handy pomodoro timer for linux.
+This is a project that have a goal to create Simple, robust and handy timer for linux with pomodoro technique support.
 
-# Tools
+It called rambutan.
 
-  * Ruby
-  * Qt
-
-# Apps list
-
-  * server: pomod
-  * CLI server console: pomocli
-  * CLI/ncurces client
-  * QT client
-
-# Server/client interconnection
-
-  * Server will open network socket
-  * client will connect
-  * client and server will use JSON for exchanging commands/data
-  * server always should send confirmation and status, like: OK or Fail
-
-# Useful libraries
-
-  * Ruby
-    * cri - library for building easy-to-use commandline tools.
-    * json - http://json.rubyforge.org/ library for json in Ruby
+The project suppose to have client and server parts.
