@@ -13,7 +13,7 @@
 #   limitations under the License.
 
 # rbtcli.rb - client side
-# usage: ruby rbtd.rb [host] port
+# usage: ruby rbtcli.rb [host] port
 
 require "socket"
 
