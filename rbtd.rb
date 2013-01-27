@@ -12,9 +12,8 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-
-# socket example - server side using thread
-# usage: ruby tsvr.rb
+# rbtd - server side using thread
+# usage: ruby rbtd.rb
 
 require "socket"
 
