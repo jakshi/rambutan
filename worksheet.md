@@ -1,7 +1,24 @@
-qpomodoro worksheet
+# Tools
 
-* I want to use tcp/ip network to exchange information between client and server.
-* I want tabbed qt interface
-* I need storage for about 50000 pomodoros, may be sqlite?
-* I want hooks, after, before pom/short break/long break starts/ends
-* I want some ruby library to handle cli interface.
+  * Ruby
+  * Qt
+
+# Apps list
+
+  * server: rbtd
+  * CLI server console: rbtcli
+  * CLI/ncurces client: rbtnc
+  * QT client: qrbt
+
+# Server/client interconnection
+
+  * Server will open network socket
+  * client will connect
+  * client and server will use JSON for exchanging commands/data
+  * server will store status for command like: OK or Fail, client can check it.
+
+# Useful libraries
+
+  * Ruby
+    * cri - library for building easy-to-use commandline tools.
+    * json - http://json.rubyforge.org/ library for json in Ruby
