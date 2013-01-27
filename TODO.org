@@ -11,7 +11,7 @@
 *** DONE Copy socket client/server ruby examples from travel notebook
 *** DONE Create bug tracker for this project
   I will use github issue tracker for this project
-*** TODO rebrand software to rambutan
+*** DONE rebrand software to rambutan
 *** TODO Create dull server/client that can exchange messages.
 *** TODO Create basic functionality
   [ ] Start timer
