@@ -6,18 +6,23 @@
 ** I want tabbed qt interface
 
 * Stuff to do:
-** DONE Add license information
-** DONE Copy socket client/server ruby examples from travel notebook
-** DONE Create bug tracker for this project
+** version 0.0.1
+*** DONE Add license information
+*** DONE Copy socket client/server ruby examples from travel notebook
+*** DONE Create bug tracker for this project
   I will use github issue tracker for this project
-** TODO rebrand software to rambutan
-** TODO Create dull server/client that can exchange messages.
-** TODO Create basic functionality
+*** TODO rebrand software to rambutan
+*** TODO Create dull server/client that can exchange messages.
+*** TODO Create basic functionality
   [ ] Start timer
   [ ] Stop timer
   [ ] Check timer
   [ ] Play <bang> when timer stops
-** TODO Register domain for this project
-** TODO Create cucumber tests
-** TODO Create ruby gem
+** version 0.0.2
+*** TODO Register domain for this project
+  [ ] Choose domain
+  [ ] Find the best price
+  [ ] Register the domain
+*** TODO Create cucumber tests
+*** TODO Create ruby gem
 * Archive
