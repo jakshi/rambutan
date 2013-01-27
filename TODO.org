@@ -1,13 +1,23 @@
 * Raw ideas
 ** I want to use tcp/ip network to exchange information between client and server.
-** I want tabbed qt interface
 ** I need storage for about 50000 pomodoros, may be sqlite?
 ** I want hooks, after, before pom/short break/long break starts/ends
 ** I want some ruby library to handle cli interface.
+** I want tabbed qt interface
+
 * Stuff to do:
 ** DONE Add license information
 ** DONE Copy socket client/server ruby examples from travel notebook
+** DONE Create bug tracker for this project
+  I will use github issue tracker for this project
+** TODO rebrand software to rambutan
 ** TODO Create dull server/client that can exchange messages.
+** TODO Create basic functionality
+  [ ] Start timer
+  [ ] Stop timer
+  [ ] Check timer
+  [ ] Play <bang> when timer stops
 ** TODO Register domain for this project
-** TODO Create bug tracker for this project
-* Done
+** TODO Create cucumber tests
+** TODO Create ruby gem
+* Archive
