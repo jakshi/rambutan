@@ -54,4 +54,5 @@
 *** TODO Add storing history of commands during current session
 *** TODO Add storing command status
 *** TODO Add checking command status to rbtcli.rb
+*** TODO Add plugin system for integration with external services.
 * Archive
