@@ -12,10 +12,21 @@
 *** DONE Create bug tracker for this project
   I will use github issue tracker for this project
 *** DONE rebrand software to rambutan
-*** TODO Create dull server/client that can exchange messages.
+*** DONE Create dull server/client that can exchange messages.
+*** TODO Add some fixed port for rambutan server/client
+*** TODO Make rbtcli.rb get commands start/stop/check/reset/help/version
+*** TODO Make rbtcli.rb send start json message to server
+*** TODO Make rbtcli.rb send stop json message to server
+*** TODO Make rbtcli.rb send reset json message to server
+*** TODO Make rbtcli.rb send check json message to server
+*** TODO Make rbtd.rb start timer when receive start json message from client
+*** TODO Make rbtd.rb stop timer when receive stop json message from client
+*** TODO Make rbtd.rb reset timer when receive reset json message from client
+*** TODO Make rbtd send timer value when receive stop json message from client
 *** TODO Create basic functionality
   [ ] Start timer
   [ ] Stop timer
+  [ ] Reset timer
   [ ] Check timer
   [ ] Play <bang> when timer stops
 ** version 0.0.2
@@ -25,4 +36,19 @@
   [ ] Register the domain
 *** TODO Create cucumber tests
 *** TODO Create ruby gem
+** version 0.0.3
+*** TODO Create octopress site for this project
+*** TODO Write documentation about using rambutan
+*** TODO Publish changelog to new project site
+** version x.x.x
+*** TODO Create commandline prompt for rbtcli.rb
+*** TODO Create config file functionality for client and server
+*** TODO Create commandline/config parameter for rambutan port
+*** TODO Create Add tasks to rambutan timer
+*** TODO Add integration with harvest
+*** TODO Add tasks alias to rambutan timer
+*** TODO Add hash for each command
+*** TODO Add storing history of commands during current session
+*** TODO Add storing command status
+*** TODO Add checking command status to rbtcli.rb
 * Archive
