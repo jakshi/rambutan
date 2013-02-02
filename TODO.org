@@ -48,6 +48,7 @@
 *** TODO Create commandline/config parameter for rambutan port
 *** TODO Create Add tasks to rambutan timer
 *** TODO Add integration with harvest
+*** TODO Add integration with colorhat
 *** TODO Add tasks alias to rambutan timer
 *** TODO Add hash for each command
 *** TODO Add storing history of commands during current session
