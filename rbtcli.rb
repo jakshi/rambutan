@@ -13,18 +13,18 @@
 #   limitations under the License.
 
 # rbtcli.rb - client side
-# usage: ruby rbtcli.rb [host] port
+# usage: ruby rbtcli.rb [host]
 
 require "socket"
 
-if ARGV.length >= 2
+if ARGV.length >= 1
   host = ARGV.shift
 else
   host = "localhost"
 end
 print("Trying ", host, " ...")
 STDOUT.flush
-s = TCPSocket.open(host, ARGV.shift)
+s = TCPSocket.open(host, 32768)
 print(" done\n")
 print("addr: ", s.addr.join(":"), "\n")
 print("peer: ", s.peeraddr.join(":"), "\n")

@@ -13,7 +13,8 @@
   I will use github issue tracker for this project
 *** DONE rebrand software to rambutan
 *** DONE Create dull server/client that can exchange messages.
-*** TODO Add some fixed port for rambutan server/client
+*** DONE Add some fixed port for rambutan server/client
+  Add fixed 32768 port
 *** TODO Make rbtcli.rb get commands start/stop/check/reset/help/version
 *** TODO Make rbtcli.rb send start json message to server
 *** TODO Make rbtcli.rb send stop json message to server
@@ -35,6 +36,7 @@
   [ ] Find the best price
   [ ] Register the domain
 *** TODO Create cucumber tests
+*** TODO write wrapper
 *** TODO Create ruby gem
 ** version 0.0.3
 *** TODO Create octopress site for this project
