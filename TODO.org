@@ -23,7 +23,10 @@
 *** TODO Make rbtd.rb start timer when receive start json message from client
 *** TODO Make rbtd.rb stop timer when receive stop json message from client
 *** TODO Make rbtd.rb reset timer when receive reset json message from client
-*** TODO Make rbtd send timer value when receive stop json message from client
+*** TODO Make rbtd send timer value when receive check json message from client
+*** TODO Make rbtcli.rb check timer value every 5 seconds.
+  if timer is expired: stop it, reset it and do <bang>.
+  if timer isn't expired: repeat check in a 5 seconds.
 *** TODO Create basic functionality
   [ ] Start timer
   [ ] Stop timer
@@ -43,9 +46,11 @@
 *** TODO Write documentation about using rambutan
 *** TODO Publish changelog to new project site
 ** version x.x.x
+*** TODO Merge start/stop in a one command (how to call it?) 
 *** TODO Create commandline prompt for rbtcli.rb
 *** TODO Create config file functionality for client and server
 *** TODO Create commandline/config parameter for rambutan port
+*** TODO Create commandline/config parameter for rambutan host
 *** TODO Create Add tasks to rambutan timer
 *** TODO Add integration with harvest
 *** TODO Add integration with colorhat
