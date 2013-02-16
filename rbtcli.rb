@@ -98,9 +98,13 @@ eos
       if value
         case opt
           when :start_timer
+            self.start
           when :stop_timer
+            self.stop
           when :reset_timer
+            self.reset
           when :check_timer
+            self.check
           when :version
             puts "vmtools #{Rambutan::VERSION} (c) 2012-2013 Konstantin Lysenko "
         end
@@ -108,6 +112,14 @@ eos
     end
 
     end
+  end
+  def start
+  end
+  def stop
+  end
+  def check
+  end
+  def reset
   end
   def connect
     host = "localhost"
