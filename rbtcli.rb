@@ -13,7 +13,7 @@
 #   limitations under the License.
 
 # rbtcli.rb - client side
-# usage: ruby rbtcli.rb [start|stop|reset|check|help|version]
+# usage: ruby rbtcli.rb [start|stop|reset|check|--help|--version]
 
 require "socket"
 require "mixlib/config"
@@ -73,7 +73,14 @@ module Rambutan
 rbtcli is an command line client for rambutan timer
 
 Usage:
-       rbtcli --start|--stop|--check|--reset
+       rbtcli start 25:00
+Timer started at 00:00
+       rbtcli stop
+Timer stoped at 03:12
+       rbtcli check
+Timer is at 0:12.23
+       rbtcli reset
+Timer resetted to 00:00
 
 Options:
 eos
