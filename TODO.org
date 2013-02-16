@@ -22,17 +22,20 @@
 *** TODO Make rbtcli.rb send check json message to server
 *** TODO Make rbtd.rb start timer when receive start json message from client
 *** TODO Make rbtd.rb stop timer when receive stop json message from client
+*** TODO Make rbtd stop timer when timer hit the limit
+
 *** TODO Make rbtd.rb reset timer when receive reset json message from client
 *** TODO Make rbtd send timer value when receive check json message from client
 *** TODO Make rbtcli.rb check timer value every 5 seconds.
   if timer is expired: stop it, reset it and do <bang>.
   if timer isn't expired: repeat check in a 5 seconds.
+*** TODO Make rbtcli.rb doing <bang> if timer hit the limit
 *** TODO Create basic functionality
   [ ] Start timer
   [ ] Stop timer
   [ ] Reset timer
   [ ] Check timer
-  [ ] Play <bang> when timer stops
+  [ ] Play <bang> when timer hit the limit
 ** version 0.0.2
 *** TODO Register domain for this project
   [ ] Choose domain
