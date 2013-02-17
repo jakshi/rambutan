@@ -12,12 +12,37 @@
 #   See the License for the specific language governing permissions and
 #   limitations under the License.
 
-# rbtcli.rb - client side
-# usage: ruby rbtcli.rb [start|stop|reset|check|--help|--version]
+# rbtcli.rb - client side 
+# usage: ruby rbtcli.rb --version
+# rambutan 0.0.1 (c) 2012-2013 Konstantin Lysenko"
+# usage: ruby rbtcli.rb --help
+# user@host:~$ ruby rbtcli
+# [00:00]> start 25:00
+# Timer started at 00:00
+# [00:01]>
+# ...
+# [03:12]> stop
+# Timer stoped at 03:12
+# [03:12]>
+# ...
+# [12:23]> check
+# Timer is at 12:23
+# [12:24]>
+# ...
+# [21:11]> reset
+# Timer resetted to 00:00
+# [00:00]>
+# ...
+# [25:00]> exit
+# user@host:~$
+
+# Temporary - need to be here till we transform rambutan app to gem
+$LOAD_PATH << '.'
 
 require "socket"
 require "mixlib/config"
 require "mixlib/cli"
+require "rambutan/version.rb"
 
 module Rambutan
 
@@ -73,16 +98,25 @@ module Rambutan
 rbtcli is an command line client for rambutan timer
 
 Usage:
-       rbtcli start 25:00
+user@host:~$ ruby rbtcli
+[00:00]> start 25:00
 Timer started at 00:00
-       rbtcli stop
+[00:01]>
+...
+[03:12]> stop
 Timer stoped at 03:12
-       rbtcli check
-Timer is at 0:12.23
-       rbtcli reset
+[03:12]>
+...
+[12:23]> check
+Timer is at 12:23
+[12:24]>
+...
+[21:11]> reset
 Timer resetted to 00:00
-
-Options:
+[00:00]>
+...
+[25:00]> exit
+user@host:~$
 eos
     cli.banner=banner
     ## Parse options
@@ -106,7 +140,7 @@ eos
           when :check_timer
             self.check
           when :version
-            puts "vmtools #{Rambutan::VERSION} (c) 2012-2013 Konstantin Lysenko "
+          puts "rambutan #{Rambutan::VERSION} (c) 2012-2013 Konstantin Lysenko"
         end
       end
     end
