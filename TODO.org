@@ -15,11 +15,15 @@
 *** DONE Create dull server/client that can exchange messages.
 *** DONE Add some fixed port for rambutan server/client
   Add fixed 32768 port
-*** DONE Make rbtcli.rb get commands start/stop/check/reset/help/version
+*** TODO Make rbtcli.rb write commandline prompt
+*** TODO Make rbtcli.rb get commands start/stop/check/reset/help/version/exit
 *** TODO Make rbtcli.rb send start json message to server
 *** TODO Make rbtcli.rb send stop json message to server
 *** TODO Make rbtcli.rb send reset json message to server
 *** TODO Make rbtcli.rb send check json message to server
+*** TODO Make rbtcli.rb exit on exit command
+*** TODO Make rbtcli.rb print help on help command
+*** TODO Make rbtcli.rb print version on version command
 *** TODO Make rbtd.rb start timer when receive start json message from client
 *** TODO Make rbtd.rb stop timer when receive stop json message from client
 *** TODO Make rbtd stop timer when timer hit the limit
@@ -49,8 +53,9 @@
 *** TODO Write documentation about using rambutan
 *** TODO Publish changelog to new project site
 ** version x.x.x
+*** TODO Add progress timer timeline (like wget download progress)
 *** TODO Merge start/stop in a one command (how to call it?) 
-*** TODO Create commandline prompt for rbtcli.rb
+*** TODO Create commandline options for rbtcli.rb
 *** TODO Create config file functionality for client and server
 *** TODO Create commandline/config parameter for rambutan port
 *** TODO Create commandline/config parameter for rambutan host
