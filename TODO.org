@@ -53,6 +53,7 @@
 *** TODO Write documentation about using rambutan
 *** TODO Publish changelog to new project site
 ** version x.x.x
+*** TODO Write man pages for the rambutan
 *** TODO Add progress timer timeline (like wget download progress)
 *** TODO Merge start/stop in a one command (how to call it?) 
 *** TODO Create commandline options for rbtcli.rb
@@ -63,9 +64,9 @@
 *** TODO Add integration with harvest
 *** TODO Add integration with colorhat
 *** TODO Add tasks alias to rambutan timer
-*** TODO Add hash for each command
-*** TODO Add storing history of commands during current session
+*** TODO Add storing history of commands during between session
 *** TODO Add storing command status
 *** TODO Add checking command status to rbtcli.rb
+*** TODO Add timer to commandline prompt
 *** TODO Add plugin system for integration with external services.
 * Archive
