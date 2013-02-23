@@ -40,9 +40,12 @@
 $LOAD_PATH << '.'
 
 require "socket"
+require "prompt"
 require "mixlib/config"
 require "mixlib/cli"
 require "rambutan/version.rb"
+
+extend Prompt::DSL
 
 module Rambutan
 
