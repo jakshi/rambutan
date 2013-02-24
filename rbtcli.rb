@@ -47,6 +47,40 @@ require "rambutan/version.rb"
 
 extend Prompt::DSL
 
+group "Timer"
+
+param :timer_limit, "Time when to stop timer", %w(25:00) 
+
+desc "Start timer"
+command "start" do |timer_limit|
+  puts "Timer started at 00:00"
+end
+
+desc "Stop timer"
+command "stop" do
+  puts "Timer stopped at 25:00"
+end
+
+desc "Reset timer"
+command "reset" do
+  puts "Timer reseted to 00:00"
+end
+
+desc "Check timer"
+command "check" do
+  puts "Timer is at 00:01"
+end
+
+group "Service"
+
+desc "Print version"
+command "version" do
+  puts "rambutan #{Rambutan::VERSION} (c) 2012-2013 Konstantin Lysenko"
+end
+
+Prompt::Console.start
+
+=begin
 module Rambutan
 
   class CLIOptions
@@ -177,6 +211,4 @@ end
 
 rcli = Rambutan::CLI.new
 rcli.run
-
-=begin
 =end
