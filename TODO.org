@@ -17,7 +17,6 @@
   Add fixed 32768 port
 *** DONE Make rbtcli.rb write commandline prompt
 *** DONE Make rbtcli.rb get commands start/stop/check/reset/help/version/exit
-*** TODO Integrate command processing to some class
 *** TODO Make rbtcli.rb send start json message to server
 *** TODO Make rbtcli.rb send stop json message to server
 *** TODO Make rbtcli.rb send reset json message to server
