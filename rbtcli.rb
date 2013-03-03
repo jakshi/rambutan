@@ -44,9 +44,45 @@ require "prompt"
 require "mixlib/config"
 require "mixlib/cli"
 require "rambutan/version.rb"
-reqyure "rambutan/rbtcli_prompt.rb"
 
 extend Prompt::DSL
+
+module Rambutan
+  class CLI
+    def run
+    end
+    def start
+      puts "Timer started at 00:00"
+    end
+    def stop
+      puts "Timer stopped at 25:00"
+    end
+    def check
+     puts "Timer is at 00:01"
+    end
+    def reset
+      puts "Timer reseted to 00:00"
+    end
+    def connect
+      host = "localhost"
+      print("Trying ", host, " ...")
+      STDOUT.flush
+      s = TCPSocket.open(host, 32768)
+      print(" done\n")
+      print("addr: ", s.addr.join(":"), "\n")
+      print("peer: ", s.peeraddr.join(":"), "\n")
+      while line = gets()
+        s.write(line)
+        print(s.readline)
+      end
+      s.close
+    end
+  end
+# Module end
+end
+
+rcli = Rambutan::CLI.new
+rcli.run
 
 group "Timer"
 
@@ -54,26 +90,22 @@ param :timer_limit, "Time when to stop timer", %w(25:00)
 
 desc "Start timer"
 command "start" do |timer_limit|
-#  self.start
-  puts "Timer started at 00:00"
+  rcli.start
 end
 
 desc "Stop timer"
 command "stop" do
-# self.stop
-  puts "Timer stopped at 25:00"
+  rcli.stop
 end
 
 desc "Reset timer"
 command "reset" do
-# self.reset
-  puts "Timer reseted to 00:00"
+  rcli.reset
 end
 
 desc "Check timer"
 command "check" do
-# self.check
-  puts "Timer is at 00:01"
+  rcli.check
 end
 
 group "Service"
@@ -83,54 +115,4 @@ command "version" do
   puts "rambutan #{Rambutan::VERSION} (c) 2012-2013 Konstantin Lysenko"
 end
 
-
 Prompt::Console.start
-
-=begin
-module Rambutan
- 
-  class CLI
-    def run
-    cli.config.each do |opt,value|
-      if value
-        case opt
-          when :start_timer
-          when :stop_timer
-          when :reset_timer
-          when :check_timer
-          when :version
-          puts "rambutan #{Rambutan::VERSION} (c) 2012-2013 Konstantin Lysenko"
-        end
-      end
-    end
-
-    end
-  end
-  def start
-  end
-  def stop
-  end
-  def check
-  end
-  def reset
-  end
-  def connect
-    host = "localhost"
-    print("Trying ", host, " ...")
-    STDOUT.flush
-    s = TCPSocket.open(host, 32768)
-    print(" done\n")
-    print("addr: ", s.addr.join(":"), "\n")
-    print("peer: ", s.peeraddr.join(":"), "\n")
-    while line = gets()
-      s.write(line)
-      print(s.readline)
-    end
-    s.close
-  end
-# Module end
-end
-
-rcli = Rambutan::CLI.new
-rcli.run
-=end
